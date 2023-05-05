@@ -3,22 +3,23 @@ body {
 }
 
 .navbar{
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  padding: 15px; */
+  padding: 15px;
 
-  display: flex;
+  /* display: flex;
     position: fixed;
+    width: 100%;
     margin: auto;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color:#fff;
     padding: 15px;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .navbar a{
