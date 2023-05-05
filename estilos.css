@@ -1,52 +1,11 @@
-body {
-  margin: 0px 0px;
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat",monospace;
 }
 
-.navbar{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-  padding: 15px;
-
-  /* display: flex;
-    position: fixed;
-    width: 100%;
-    margin: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color:#fff;
-    padding: 15px;
-    z-index: 1; */
-}
-
-.navbar a{
-  text-decoration: none;
-  color: inherit;
-}
-
-.logo{
-  margin-right: 50px;
-}
-
-.list{
-  /* list-style: none;
-  display: flex;
-  gap: 25px; */
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin-right: 50px; 
-}
-
-#toggler, .navbar label{
-  display: none;
-}
-
-
-/* SOBRE-MI */
 h1 {
   margin-top: 0;
   font-size: 3rem;
@@ -60,26 +19,68 @@ h2 {
   color: #fff;
 }
 
+.navbar{
+  display: flex; /*Contenedor para crear un sistema flexible y dinamico*/
+  flex-wrap: wrap; /*Se usa en conjunto con display: flex para controlar como se envuelven los elementos */
+  align-items: center; /*alinear verticalmente los elementos al centro*/
+  justify-content: space-between; /*Los elementos se distribuiran a lo largo del contenedor*/
+  background-color: #dbdada; /*Color de fondo*/
+  padding: 10px;
+  position: fixed; /*hace que el elemento esté siempre en la misma posición en la pantalla*/
+  top: 0; /*lo situa en la parte superior de la pantalla*/
+  left: 0; /*lo situa en la parte izquierda de la pantalla*/
+  right: 0; /*lo situa en la parte derecha de la pantalla*/
+  z-index: 2; /*asegura que el elemento siempre esté en la parte superior*/
+}
+
+.navbar a, i{
+  text-decoration: none; /*Eliminar la decoracion predeterminada en los elementos HTML*/
+  color:#6e07f3; /*Color de letra*/
+}
+
+.logo{
+  margin-right: 50px; /*Habra un espacio de 50 pixeles a la derecha*/
+}
+
+.list{
+  list-style: none; /*Eliminar estilos de listas (viñetas o numeracion)*/
+  display: flex; /*Contenedor para crear un sistema flexible y dinamico*/
+  gap: 25px; /*Espacio de 25px en cada elemento*/
+}
+
+#toggler, .navbar label{
+  display: none; /*Ocultar elemento*/
+}
+
 #sobre-mi{
   position: relative;
   width: 100%;
   height: 700px;
-  background-color: #6e07f3;
+  /* background-color: #6e07f3; */
+  background-color:#3b0483; /*Color de letra*/
+}
+
+.img-fondo{
+  width: 100%;
+  /* height: 100%; */
 }
 
 .contenedor {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   display: inline-flex;
   margin: auto;
+  background-color: #3b0483;
 
 }
 
 .imgPerfil{
-  height: 250px;
-  width: 250px;
+  margin: auto;
+  left: 50%;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
 }
 
@@ -90,26 +91,28 @@ h2 {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+
   .menu{
-    width: 100%;
-    max-height: 0;
-    overflow: auto;
+    width: 100%; /*Establecer 100% del ancho del contenedor*/
+    max-height: 0px; /*Altura máxima del elemento*/
+    overflow: hidden; /*indica que cualquier contenido que se desborde del elemento será ocultado*/
   }
-  
+
   .list{
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+   flex-direction: column; /*junto con un display: fles, los elementos contenidos en él se colocarán uno debajo del otro en una columna*/
+   align-items: center; /*alinear verticalmente los elementos al centro*/
+    padding: 20px; /*Establecerá un relleno de 20 píxeles en todos los lados del elemento */
   }
 
   .navbar label{
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
+    display: inline-flex; /*combina las características de los elementos en línea e inline-block, permitiendo al elemento contener elementos flexibles y al mismo tiempo permitir que otros elementos se coloquen al lado del elemento flexible en la misma línea*/
+    align-items: center; /*alinear verticalmente los elementos al centro*/
+    cursor: pointer; /*Cambia el diseño del cursos*/
   }
 
-  #toggler:checked ~ .menu{
+  #toggler:checked ~ .menu{ /*es un selector CSS que se utiliza para seleccionar el elemento con clase menu que está directamente después del elemento con ID toggler cuando está seleccionado (es decir, su estado checked es true).*/
     max-height: 100%;
   }
+  
 }
