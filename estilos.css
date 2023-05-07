@@ -150,6 +150,11 @@ h2{
     transform: scale(1.5);
   }
 
+  .contenedor-imagen .cuadro {
+    top: 70%;
+    height: 70%;
+  }
+
   .cuadro{
     flex-direction: column;
   }
