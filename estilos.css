@@ -136,7 +136,7 @@ h2{
   }
 
   .contenedor-imagen .imgFondo {
-    height: 100vh;
+    height: 90vh;
     /* width: 100vw; */
     transform: scale(1.5)
   }
