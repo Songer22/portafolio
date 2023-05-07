@@ -6,25 +6,13 @@ html, body {
   font-family: "Montserrat",monospace;
 }
 
-h1 {
-  margin-top: 0;
-  font-size: 3rem;
-  color: #fff;
-}
-
-h2 {
-  margin-top: 0;
-  font-size: 2rem;
-  font-weight: normal;
-  color: #fff;
-}
-
 .navbar{
   display: flex; /*Contenedor para crear un sistema flexible y dinamico*/
   flex-wrap: wrap; /*Se usa en conjunto con display: flex para controlar como se envuelven los elementos */
   align-items: center; /*alinear verticalmente los elementos al centro*/
   justify-content: space-between; /*Los elementos se distribuiran a lo largo del contenedor*/
-  background-color: #dbdada; /*Color de fondo*/
+  background-color: #000000; /*Color de fondo*/
+  opacity: .9;
   padding: 10px;
   position: fixed; /*hace que el elemento esté siempre en la misma posición en la pantalla*/
   top: 0; /*lo situa en la parte superior de la pantalla*/
@@ -35,7 +23,8 @@ h2 {
 
 .navbar a, i{
   text-decoration: none; /*Eliminar la decoracion predeterminada en los elementos HTML*/
-  color:#6e07f3; /*Color de letra*/
+  color:#ffffff; /*Color de letra*/
+  /* opacity:; */
 }
 
 .logo{
@@ -52,46 +41,42 @@ h2 {
   display: none; /*Ocultar elemento*/
 }
 
-#sobre-mi{
+
+
+.contenedor-imagen img {
+  max-width: 100%;
+  height: 600px;
+}
+
+
+.contenedor-imagen {
   position: relative;
-  width: 100%;
-  height: 700px;
-  /* background-color: #6e07f3; */
-  background-color:#3b0483; /*Color de letra*/
 }
 
-.img-fondo{
-  width: 100%;
-  /* height: 100%; */
+.contenedor-imagen img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.contenedor {
+.contenedor-imagen .cuadro {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%);
-  display: inline-flex;
-  margin: auto;
-  background-color: #3b0483;
-
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #fff;
+  box-sizing: border-box;
 }
 
-.imgPerfil{
-  margin: auto;
-  left: 50%;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
 
-.titular{
-  width: 400px;
-  margin: auto;
-  padding-left: 50px;
-  display: block;
-}
 
-@media screen and (max-width: 700px) {
+
+
+
+@media screen and (max-width: 600px) {
 
   .menu{
     width: 100%; /*Establecer 100% del ancho del contenedor*/
@@ -114,5 +99,12 @@ h2 {
   #toggler:checked ~ .menu{ /*es un selector CSS que se utiliza para seleccionar el elemento con clase menu que está directamente después del elemento con ID toggler cuando está seleccionado (es decir, su estado checked es true).*/
     max-height: 100%;
   }
-  
+
+  @media (max-width: 767px) {
+    .contenedor-imagen .cuadro {
+      top: 60%;
+      width: 70%;
+      height: 70%;
+    }
+  }
 }
