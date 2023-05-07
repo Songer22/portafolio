@@ -88,6 +88,10 @@ html, body {
     overflow: hidden; /*indica que cualquier contenido que se desborde del elemento será ocultado*/
   }
 
+  nav.navbar {
+    font-size: 30px;
+}
+
   .list{
    flex-direction: column; /*junto con un display: fles, los elementos contenidos en él se colocarán uno debajo del otro en una columna*/
    align-items: center; /*alinear verticalmente los elementos al centro*/
