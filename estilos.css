@@ -111,9 +111,9 @@ html, body {
     width: 100vw;
   }
 
-  .contenedor-imagen {
+  /* .contenedor-imagen {
     zoom: 2.5;
-  }
+  } */
   .contenedor-imagen .cuadro {
     top: 60%;
     width: 80%;
