@@ -69,7 +69,7 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  height: 70%;
+  height: 60%;
   background-color: #043c6ab3;
   box-sizing: border-box;
 }
@@ -84,10 +84,11 @@ html, body {
   text-align: center;
   line-height: 1.5;
   padding: 20px;
+  border-radius: 30px;
 }
 
 .imgPerfil{
-  width: 40%;
+  width: 35%;
   border-radius: 50%;
 }
 
