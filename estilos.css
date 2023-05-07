@@ -136,8 +136,8 @@ h2{
   }
 
   .contenedor-imagen .imgFondo {
-    height: 90vh;
-    /* width: 100vw; */
+    height: 80vh;
+    width: 100vw;
     transform: scale(1.5)
   }
 
@@ -146,7 +146,7 @@ h2{
   }
 
   .imgPerfil{
-    width: 60%;
+    width: 50%;
     padding-top: 7px;
     border-radius: 50%;
   }
