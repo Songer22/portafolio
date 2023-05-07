@@ -73,13 +73,14 @@ html, body {
   height: 60%;
   background-color: #043c6ab3;
   box-sizing: border-box;
+  justify-content: space-around;
 }
 
 .cuadro{
   backdrop-filter: blur(5px);
   display: flex; 
   align-items: center;
-  justify-content:space-around;
+  /* justify-content:space-around; */
   justify-content: center;
   align-items: center;
   text-align: center;
