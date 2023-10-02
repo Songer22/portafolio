@@ -68,8 +68,10 @@ body{
     .box{
         grid-template-columns: repeat(1, 1fr);
         padding: 20px;
-        width: 400px;
-        height: 450px;
+        width: 90%;
+        height: 90%;
+        background-color: transparent;
+        backdrop-filter: blur(0px);
     }
 
     .img-avatar{
@@ -79,12 +81,12 @@ body{
 }
 
 @media screen and (max-width: 500px){ /* Diseño responsivo para celulares*/
-    .img-avatar{
-        width: 100px;
-        height: 100px;
-    }
+    /* .img-avatar{
+        width: 70%;
+        height: 70%;
+    } */
 
     .box{
-        width: 200px;
+        width: 100%;
     }
 }
